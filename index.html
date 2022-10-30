@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <div class="hero">
+    <div class="text">
+      <h1 class="title">Good Vibes Form</h1>
+      <p>Tell us something positive that happened to you today.</p>
+    </div>
+  
+    <div class="formulario">
+      <form>
+        <div class="row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+        </div>
+
+        <div class="row">
+          <label for="last-name">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address"><br>
+        </div>
+
+        <div class="row">
+          <label for="scale">On a scale of 1-10, how good was it?</label>
+          <input type="number" id="scale" name="scale" min="1" max="10" placeholder="Enter a number between 1 and 10"><br>
+        </div>
+
+        <div class="row">
+          <label for="place">Where did it happen?</label>
+          <select id="place" name="place">
+            <option value="home">At home</option>
+            <option value="commute">On my commute</option>
+            <option value="work">At work</option>
+            <option value="street">On the street</option>
+            <option value="street">Other</option>
+          </select>
+        </div><br>
+
+        <div class="row">
+          <p>At what time of day did it happen?</p>
+          <div class="options">
+            <div class="rowtwo">
+              <input type="radio" id="morning" name="time" value="morning">
+              <label for="morning">Morning</label>
+            </div>
+
+            <div class="rowtwo">
+              <input type="radio" id="afternoon" name="time" value="afternoon">
+              <label for="afternoon">Afternoon</label>
+            </div>
+            
+            <div class="rowtwo">
+              <input type="radio" id="evening" name="time" value="evening">
+              <label for="evening">Evening</label>
+            </div>
+          </div>
+            
+        </div><br>
+
+        <div class="row">
+          <p>What emotions did you experience? (Select all that apply)</p>
+          <div class="options">
+            <div class="rowtwo">
+              <input type="checkbox" id="excited" name="excited" value="excited">
+              <label for="excited">Excited</label>
+            </div>
+            
+            <div class="rowtwo">
+              <input type="checkbox" id="humbled" name="humbled" value="humbled">
+              <label for="humbled">Humbled</label>
+            </div>
+            
+            <div class="rowtwo">
+              <input type="checkbox" id="elated" name="elated" value="elated">
+              <label for="elated">Elated</label>
+            </div>
+
+            <div class="rowtwo">
+              <input type="checkbox" id="loved" name="loved" value="loved">
+              <label for="loved">Loved</label>
+            </div>
+
+            <div class="rowtwo">
+              <input type="checkbox" id="enthusiastic" name="enthusiastic" value="enthusiastic">
+              <label for="enthusiastic">Enthusiastic</label>
+            </div>
+            
+          </div>          
+        </div><br>
+          
+
+        <div class="row">
+          <p>Please describe your positive experience.</p>
+          <textarea name="message" rows="4" cols="20" placeholder="Enter your experience here...">
+          </textarea>
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="SUBMIT">
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Beatriz García</a>.
+    </p>
+  </footer>
+</body>
+</html>
